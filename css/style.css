@@ -1,0 +1,113 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+html, body
+{
+    margin: 0;
+    
+    
+}
+div.bucket
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 10em 3em;
+    text-align: center;
+
+}
+
+div.bucket a#header-content
+{
+    color: #fff;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    font-weight: bolder;
+    cursor: pointer;
+    
+    
+}
+
+div.bucket a#header-content:hover {
+
+    box-shadow: 10px 10px 35px black;
+
+}
+div.bucket div.logo h1 {
+    font-size: 390%;
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+div.bucket div.logo p {
+    font-size: 50px;
+    color: #fff;
+    position: relative;
+    top: 10px;
+}
+
+.blue
+{
+    background-size: auto;
+    background-position: center;
+    background-image: linear-gradient(
+		to top,
+		rgba(0,45,75,0.6), 
+		rgba(0, 0, 0, 0.2)
+	),
+    url(/images/header.jpeg);     
+    
+}
+
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 55px;
+    height: 55px;
+    border: 4px solid #fff;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+input[type=text] {
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 100px;
+    font-size: 86%;
+    margin-top: 10%;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+  
+input[type=text]:focus {
+    width: 100%;
+}
